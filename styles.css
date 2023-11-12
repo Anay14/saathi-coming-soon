@@ -1,0 +1,100 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('../saathi-coming-soon/assets/BG-poster.png'); /* Update with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.9); /* Gives a slight white overlay to increase readability */
+}
+
+header h1 {
+    color: #333;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+#signup-form input[type=email] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px; /* You can adjust the width as necessary */
+}
+
+#signup-form button {
+    padding: 10px 20px;
+    border: none;
+    background: orange; /* Use a color that fits your scheme */
+    color: white;
+    cursor: pointer;
+}
+
+#signup-form button:hover {
+    background: darkorange; /* Slightly darker on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+    }
+
+    #signup-form input[type=email],
+    #signup-form button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 5px;
+        margin: 5px 0;
+    }
+}
+
